@@ -11,7 +11,8 @@ dotenv.config();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-    origin: ['https://web-chat-chi-bice.vercel.app', ],
+    origin: [ "http://localhost:5173", // For local testing
+        "https://jovial-palmier-361335.netlify.app", ],
     credentials: true,
 }))
 app.use(express.json({ limit: '10mb' })); // Set a higher limit

@@ -14,7 +14,7 @@ const socket_1 = require("./lib/socket");
 dotenv_1.default.config();
 const PORT = process.env.PORT || 3001;
 socket_1.app.use((0, cors_1.default)({
-    origin: ['http://localhost:5173',],
+    origin: ['https://web-chat-chi-bice.vercel.app',],
     credentials: true,
 }));
 socket_1.app.use(express_1.default.json({ limit: '10mb' })); // Set a higher limit
